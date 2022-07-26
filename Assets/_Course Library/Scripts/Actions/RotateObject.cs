@@ -57,4 +57,9 @@ public class RotateObject : MonoBehaviour
     {
         transform.Rotate(transform.up, (sensitivity * speed) * Time.deltaTime);
     }
+    public void RotateTo(float f)
+    {
+        Debug.Log(f);
+        transform.localRotation = Quaternion.Euler(0, f, 0);
+    }
 }
