@@ -24,8 +24,10 @@ public class RecordPlayer : MonoBehaviour
     }
     public void ToggleRecordPlayer()
     {
+        Debug.Log("Plays Function");
         if (myAudio.clip !=null)
         {
+            Debug.Log("Audio clip fine");
             if (myAudio.isPlaying)
             {
                 myAudio.Pause();
